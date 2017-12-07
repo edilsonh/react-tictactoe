@@ -2,12 +2,12 @@
   border: 1px solid;
 }
 
-.outside-center-box {
+.square-2, .square-8 {
   border-left: 1px solid;
   border-right: 1px solid;
 }
 
-.side-center-box {
+.square-4, .square-6 {
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
