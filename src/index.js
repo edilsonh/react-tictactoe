@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class MarkBoard extends React.Component {
-  markX() {
-
-  }
+class Tictactoe extends React.Component {
+  
   render() {
-    let td = document.getElementsByTagName('td');
-    for (let i = 0; i < td.length; i++) {
-      td[i].setAttribute("id","square-" + (i + 1));
-    }
-    return <section>{this.td}</section>
+
+    return <table>
+      <tr>
+        <td id='square-1'></td>
+        <td id='square-2'></td>
+        <td id='square-3'></td>
+      </tr>
+      <tr>
+        <td id='square-4'></td>
+        <td id='square-5'></td>
+        <td id='square-6'></td>
+      </tr>
+      <tr>
+        <td id='square-7'></td>
+        <td id='square-8'></td>
+        <td id='square-9'></td>
+      </tr>
+    </table>
   }
 }
 
-ReactDOM.render(<MarkBoard />, document.getElementById('root'));
+ReactDOM.render(<Tictactoe />, document.getElementById('root'));
