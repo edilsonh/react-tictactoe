@@ -1,13 +1,13 @@
-#square-5 {
+#space5 {
   border: 1px solid;
 }
 
-#square-2, #square-8 {
+#space2, #space8 {
   border-left: 1px solid;
   border-right: 1px solid;
 }
 
-#square-4, #square-6 {
+#space4, #space6 {
   border-top: 1px solid;
   border-bottom: 1px solid;
 }

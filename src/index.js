@@ -8,29 +8,30 @@ class Tictactoe extends React.Component {
     this.markBoard = this.markBoard.bind(this);
   }
 
-  markBoard() {
-    const x = this.state.space1 === "" ? "X" : "";
-    this.setState({space1: x})
+  markBoard(b) {
+    let m = b.target.id;
+    const x = this.state[m] === "" ? "X" : "";
+
+    this.setState({[m]: x});
   }
 
   render() {
-
     return <table>
       <tbody>
         <tr>
-          <td id='square-1' onClick={this.markBoard}>{this.state.space1}</td>
-          <td id='square-2' onClick={this.markBoard}>{this.state.space2}</td>
-          <td id='square-3' onClick={this.markBoard}>{this.state.space3}</td>
+          <td id='space1' onClick={this.markBoard}>{this.state.space1}</td>
+          <td id='space2' onClick={this.markBoard}>{this.state.space2}</td>
+          <td id='space3' onClick={this.markBoard}>{this.state.space3}</td>
         </tr>
         <tr>
-          <td id='square-4' onClick={this.markBoard}>{this.state.space4}</td>
-          <td id='square-5' onClick={this.markBoard}>{this.state.space5}</td>
-          <td id='square-6' onClick={this.markBoard}>{this.state.space6}</td>
+          <td id='space4' onClick={this.markBoard}>{this.state.space4}</td>
+          <td id='space5' onClick={this.markBoard}>{this.state.space5}</td>
+          <td id='space6' onClick={this.markBoard}>{this.state.space6}</td>
         </tr>
         <tr>
-          <td id='square-7' onClick={this.markBoard}>{this.state.space7}</td>
-          <td id='square-8' onClick={this.markBoard}>{this.state.space8}</td>
-          <td id='square-9' onClick={this.markBoard}>{this.state.space9}</td>
+          <td id='space7' onClick={this.markBoard}>{this.state.space7}</td>
+          <td id='space8' onClick={this.markBoard}>{this.state.space8}</td>
+          <td id='space9' onClick={this.markBoard}>{this.state.space9}</td>
         </tr>
       </tbody>
     </table>
