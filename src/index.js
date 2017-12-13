@@ -6,6 +6,7 @@ class Tictactoe extends React.Component {
     super(props);
     this.state = {turnCount: 0, space1: "", space2: "", space3: "", space4: "", space5: "", space6: "", space7: "", space8: "", space9: ""};
     this.markBoard = this.markBoard.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
   markBoard(b) {
@@ -30,6 +31,14 @@ class Tictactoe extends React.Component {
 
     this.setState({[space]: mark});
     this.setState({turnCount: this.state.turnCount += 1});
+  }
+
+  reset() {
+    this.setState({turnCount: 0});
+    let space;
+    for (var i = 0; i < 10; i++) {
+      this.setState({[`space${i}`]: ""});
+    }
   }
 
   render() {
@@ -59,6 +68,7 @@ class Tictactoe extends React.Component {
           </tr>
         </tbody>
       </table>
+      <button onClick={this.reset}>Reset</button>
       {boardFull}
     </section>
   }
