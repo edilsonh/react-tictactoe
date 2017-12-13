@@ -10,6 +10,9 @@ class Tictactoe extends React.Component {
 
   markBoard(b) {
     let space = b.target.id;
+    if (b.target.innerHTML !== "") {
+      return;
+    }
     let mark
     let whosTurn = this.state.turnCount % 2;
     switch (whosTurn) {
@@ -26,7 +29,7 @@ class Tictactoe extends React.Component {
     }
 
     this.setState({[space]: mark});
-    this.setState({["turnCount"]: this.state.turnCount += 1});
+    this.setState({turnCount: this.state.turnCount += 1});
   }
 
   render() {
