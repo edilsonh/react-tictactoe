@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class Tictactoe extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {space1: "", space2: "", space3: "", space4: "", space5: "", space6: "", space7: "", space8: "", space9: ""};
+    this.state = {turnCount: 0, space1: "", space2: "", space3: "", space4: "", space5: "", space6: "", space7: "", space8: "", space9: ""};
     this.markBoard = this.markBoard.bind(this);
   }
 
@@ -25,6 +25,7 @@ class Tictactoe extends React.Component {
     }
 
     this.setState({[space]: mark});
+    this.setState({["turnCount"]: this.state.turnCount += 1});
   }
 
   render() {
