@@ -11,12 +11,13 @@ class Tictactoe extends React.Component {
   markBoard(b) {
     let space = b.target.id;
     let mark
-    switch (this.state[space]) {
-      case "":
+    let whosTurn = this.state.turnCount % 2;
+    switch (whosTurn) {
+      case 0:
         mark = "X";
         break;
 
-        case "X":
+      case 1:
         mark = "O"
         break;
 
