@@ -9,10 +9,22 @@ class Tictactoe extends React.Component {
   }
 
   markBoard(b) {
-    let m = b.target.id;
-    const x = this.state[m] === "" ? "X" : "";
+    let space = b.target.id;
+    let mark
+    switch (this.state[space]) {
+      case "":
+        mark = "X";
+        break;
 
-    this.setState({[m]: x});
+        case "X":
+        mark = "O"
+        break;
+
+      default:
+        mark = "";
+    }
+
+    this.setState({[space]: mark});
   }
 
   render() {
