@@ -49,7 +49,7 @@ class Tictactoe extends React.Component {
       )
     }
     return <section>
-      <table>
+      <table align='center'>
         <tbody>
           <tr>
             <td id='space1' onClick={this.markBoard}>{this.state.space1}</td>
