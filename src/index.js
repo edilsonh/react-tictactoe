@@ -52,19 +52,19 @@ class Tictactoe extends React.Component {
       <table align='center'>
         <tbody>
           <tr>
-            <td id='space1' onClick={this.markBoard}>{this.state.space1}</td>
-            <td id='space2' onClick={this.markBoard}>{this.state.space2}</td>
-            <td id='space3' onClick={this.markBoard}>{this.state.space3}</td>
+            <td id='space1' onClick={this.markBoard} class={this.state.space1}>{this.state.space1}</td>
+            <td id='space2' onClick={this.markBoard} class={this.state.space2}>{this.state.space2}</td>
+            <td id='space3' onClick={this.markBoard} class={this.state.space3}>{this.state.space3}</td>
           </tr>
           <tr>
-            <td id='space4' onClick={this.markBoard}>{this.state.space4}</td>
-            <td id='space5' onClick={this.markBoard}>{this.state.space5}</td>
-            <td id='space6' onClick={this.markBoard}>{this.state.space6}</td>
+            <td id='space4' onClick={this.markBoard} class={this.state.space4}>{this.state.space4}</td>
+            <td id='space5' onClick={this.markBoard} class={this.state.space5}>{this.state.space5}</td>
+            <td id='space6' onClick={this.markBoard} class={this.state.space6}>{this.state.space6}</td>
           </tr>
           <tr>
-            <td id='space7' onClick={this.markBoard}>{this.state.space7}</td>
-            <td id='space8' onClick={this.markBoard}>{this.state.space8}</td>
-            <td id='space9' onClick={this.markBoard}>{this.state.space9}</td>
+            <td id='space7' onClick={this.markBoard} class={this.state.space7}>{this.state.space7}</td>
+            <td id='space8' onClick={this.markBoard} class={this.state.space8}>{this.state.space8}</td>
+            <td id='space9' onClick={this.markBoard} class={this.state.space9}>{this.state.space9}</td>
           </tr>
         </tbody>
       </table>

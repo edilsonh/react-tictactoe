@@ -1,15 +1,15 @@
 #space5 {
-  border: 1px solid;
+  border: 4px darkgray solid;
 }
 
 #space2, #space8 {
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-left: 4px darkgray solid;
+  border-right: 4px darkgray solid;
 }
 
 #space4, #space6 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 4px darkgray solid;
+  border-bottom: 4px darkgray solid;
 }
 
 td {
@@ -25,4 +25,12 @@ table {
 
 section {
   text-align: center;
+}
+
+.X {
+  color: red;
+}
+
+.O {
+  color: blue;
 }
