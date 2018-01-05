@@ -1,1 +1,0 @@
-## TicTacToe Built with ReactJS
